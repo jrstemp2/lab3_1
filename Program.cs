@@ -8,7 +8,7 @@ namespace lab3_1
         {
             string[] students = new string[] { "Abby", "Brad", "Charlie", "Dianne", "Edith", "Francine", "Greg", "Haley", "Ilsa", "John"};
             string[] faveCandy = new string[] { "Almond Joy", "Butterfinger", "Dots", "Crunch Bar", "English Toffee", "Fun Dip", "Gummy Bears", "Heath Bar", "Ice Breakers Gum", "Jaw Breakers" };
-            string[] prevTitle = new string[] { "Athlete", "Business Analyst", "Cop", "Dance Teacher", "Educator", "Flight Attendant", "Gym Teacher", "High School Teacher", "Ice Skater", "" };
+            string[] prevTitle = new string[] { "Athlete", "Business Analyst", "Cop", "Dance Teacher", "Educator", "Flight Attendant", "Gym Teacher", "High School Teacher", "Ice Skater", "Judge" };
             string goAgain = "yes";
 
             Console.WriteLine("Welcome to our Dev.Build Class!");
@@ -61,7 +61,7 @@ namespace lab3_1
                         continue;
 
                     }
-                    Console.Write($"Would you like to know anything else about {students[x - 1]}?: ");
+                    Console.Write($"Would you like to know anything else about {students[x - 1]}?: (yes/no)");
                   
                     goAgain = Console.ReadLine();
                     if (goAgain == "no")
